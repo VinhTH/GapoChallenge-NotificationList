@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0392FC4DBE4D4281E18430AA /* Pods_GapoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1463EB1074EFDC2457D5A2DF /* Pods_GapoChallenge.framework */; };
+		DE2A31FD500ADF34C9C10104 /* Pods_GapoChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005A0C2404320C5D846CF14C /* Pods_GapoChallengeTests.framework */; };
+		F5050B3C27DBA9B000C23D40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5050B3B27DBA9B000C23D40 /* AppDelegate.swift */; };
+		F5050B4527DBA9B200C23D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5050B4427DBA9B200C23D40 /* Assets.xcassets */; };
+		F5050B4827DBA9B200C23D40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5050B4627DBA9B200C23D40 /* LaunchScreen.storyboard */; };
+		F521FBA227DC2B10007AB105 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F521FBA127DC2B10007AB105 /* NotificationViewModel.swift */; };
+		F521FBA527DC303C007AB105 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F521FBA427DC303C007AB105 /* TimeInterval+.swift */; };
+		F521FBA727DC350C007AB105 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F521FBA627DC350C007AB105 /* UILabel+.swift */; };
+		F521FBA927DC407B007AB105 /* noti.json in Resources */ = {isa = PBXBuildFile; fileRef = F521FBA827DC407B007AB105 /* noti.json */; };
+		F57CD5EE27DBABAA00B514BF /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD5ED27DBABAA00B514BF /* NotificationListViewController.swift */; };
+		F57CD5F027DBABBC00B514BF /* NotificationListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57CD5EF27DBABBC00B514BF /* NotificationListViewController.storyboard */; };
+		F57CD5F327DBACF300B514BF /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD5F227DBACF300B514BF /* StoryboardInstantiable.swift */; };
+		F57CD5F727DBAE8700B514BF /* NotificationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD5F627DBAE8700B514BF /* NotificationListViewModel.swift */; };
+		F57CD5FF27DBB3F800B514BF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD5FE27DBB3F800B514BF /* Notification.swift */; };
+		F57CD60227DBB69D00B514BF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD60127DBB69D00B514BF /* APIClient.swift */; };
+		F57CD60527DBB8E900B514BF /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD60427DBB8E900B514BF /* AppDIContainer.swift */; };
+		F57CD60927DBBD3000B514BF /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD60827DBBD3000B514BF /* GlobalFuncs.swift */; };
+		F57CD60B27DBC59100B514BF /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD60A27DBC59100B514BF /* NotificationTableViewCell.swift */; };
+		F59238F927DC61CB005EBEE5 /* NotificationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59238F827DC61CB005EBEE5 /* NotificationListViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F59238FA27DC61CB005EBEE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5050B3027DBA9B000C23D40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5050B3727DBA9B000C23D40;
+			remoteInfo = GapoChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005A0C2404320C5D846CF14C /* Pods_GapoChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GapoChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1463EB1074EFDC2457D5A2DF /* Pods_GapoChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GapoChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7539217AF4338912709748 /* Pods-GapoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-GapoChallengeTests/Pods-GapoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D94E2CA1E99B99668919DD6 /* Pods-GapoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoChallenge.release.xcconfig"; path = "Target Support Files/Pods-GapoChallenge/Pods-GapoChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		4CBAF6E206216C1FA809256F /* Pods-GapoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-GapoChallengeTests/Pods-GapoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71338D79918450C1B1DF3BD9 /* Pods-GapoChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GapoChallenge/Pods-GapoChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F5050B3827DBA9B000C23D40 /* GapoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GapoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5050B3B27DBA9B000C23D40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5050B4427DBA9B200C23D40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5050B4727DBA9B200C23D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5050B4927DBA9B200C23D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F521FBA127DC2B10007AB105 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		F521FBA427DC303C007AB105 /* TimeInterval+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
+		F521FBA627DC350C007AB105 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		F521FBA827DC407B007AB105 /* noti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noti.json; sourceTree = "<group>"; };
+		F57CD5ED27DBABAA00B514BF /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
+		F57CD5EF27DBABBC00B514BF /* NotificationListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationListViewController.storyboard; sourceTree = "<group>"; };
+		F57CD5F227DBACF300B514BF /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		F57CD5F627DBAE8700B514BF /* NotificationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewModel.swift; sourceTree = "<group>"; };
+		F57CD5FE27DBB3F800B514BF /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		F57CD60127DBB69D00B514BF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F57CD60427DBB8E900B514BF /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		F57CD60827DBBD3000B514BF /* GlobalFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
+		F57CD60A27DBC59100B514BF /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		F59238F627DC61CB005EBEE5 /* GapoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GapoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59238F827DC61CB005EBEE5 /* NotificationListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewModelTests.swift; sourceTree = "<group>"; };
+		F59238FF27DC876D005EBEE5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5050B3527DBA9B000C23D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392FC4DBE4D4281E18430AA /* Pods_GapoChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59238F327DC61CB005EBEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2A31FD500ADF34C9C10104 /* Pods_GapoChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2B1BCA63F4354A8AF28AC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1463EB1074EFDC2457D5A2DF /* Pods_GapoChallenge.framework */,
+				005A0C2404320C5D846CF14C /* Pods_GapoChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AA2F64E4DC8AFC5C2D7C91B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71338D79918450C1B1DF3BD9 /* Pods-GapoChallenge.debug.xcconfig */,
+				2D94E2CA1E99B99668919DD6 /* Pods-GapoChallenge.release.xcconfig */,
+				4CBAF6E206216C1FA809256F /* Pods-GapoChallengeTests.debug.xcconfig */,
+				1F7539217AF4338912709748 /* Pods-GapoChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5050B2F27DBA9B000C23D40 = {
+			isa = PBXGroup;
+			children = (
+				F59238FF27DC876D005EBEE5 /* README.md */,
+				F5050B3A27DBA9B000C23D40 /* GapoChallenge */,
+				F59238F727DC61CB005EBEE5 /* GapoChallengeTests */,
+				F5050B3927DBA9B000C23D40 /* Products */,
+				5AA2F64E4DC8AFC5C2D7C91B /* Pods */,
+				1A2B1BCA63F4354A8AF28AC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5050B3927DBA9B000C23D40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5050B3827DBA9B000C23D40 /* GapoChallenge.app */,
+				F59238F627DC61CB005EBEE5 /* GapoChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5050B3A27DBA9B000C23D40 /* GapoChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F57CD5E827DBAADF00B514BF /* Application */,
+				F57CD60027DBB68700B514BF /* APIClient */,
+				F57CD5F427DBAE6400B514BF /* Controllers */,
+				F57CD5F527DBAE6A00B514BF /* ViewModels */,
+				F57CD5FD27DBB3B700B514BF /* Models */,
+				F57CD5FB27DBB36300B514BF /* Utilities */,
+				F57CD5EB27DBAB6D00B514BF /* Resources */,
+				F57CD5E927DBAB1C00B514BF /* Support Files */,
+			);
+			path = GapoChallenge;
+			sourceTree = "<group>";
+		};
+		F521FBA327DC302A007AB105 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F521FBA427DC303C007AB105 /* TimeInterval+.swift */,
+				F521FBA627DC350C007AB105 /* UILabel+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F57CD5E827DBAADF00B514BF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F5050B3B27DBA9B000C23D40 /* AppDelegate.swift */,
+				F57CD60327DBB8C800B514BF /* DIContainer */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F57CD5E927DBAB1C00B514BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5050B4927DBA9B200C23D40 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F57CD5EB27DBAB6D00B514BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5050B4427DBA9B200C23D40 /* Assets.xcassets */,
+				F5050B4627DBA9B200C23D40 /* LaunchScreen.storyboard */,
+				F521FBA827DC407B007AB105 /* noti.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F57CD5F427DBAE6400B514BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F57CD5FC27DBB39200B514BF /* NotificationList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F57CD5F527DBAE6A00B514BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F521FBA127DC2B10007AB105 /* NotificationViewModel.swift */,
+				F57CD5F627DBAE8700B514BF /* NotificationListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F57CD5FB27DBB36300B514BF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F57CD60827DBBD3000B514BF /* GlobalFuncs.swift */,
+				F57CD5F227DBACF300B514BF /* StoryboardInstantiable.swift */,
+				F521FBA327DC302A007AB105 /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F57CD5FC27DBB39200B514BF /* NotificationList */ = {
+			isa = PBXGroup;
+			children = (
+				F57CD60A27DBC59100B514BF /* NotificationTableViewCell.swift */,
+				F57CD5ED27DBABAA00B514BF /* NotificationListViewController.swift */,
+				F57CD5EF27DBABBC00B514BF /* NotificationListViewController.storyboard */,
+			);
+			path = NotificationList;
+			sourceTree = "<group>";
+		};
+		F57CD5FD27DBB3B700B514BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F57CD5FE27DBB3F800B514BF /* Notification.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F57CD60027DBB68700B514BF /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				F57CD60127DBB69D00B514BF /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		F57CD60327DBB8C800B514BF /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				F57CD60427DBB8E900B514BF /* AppDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		F59238F727DC61CB005EBEE5 /* GapoChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F59238F827DC61CB005EBEE5 /* NotificationListViewModelTests.swift */,
+			);
+			path = GapoChallengeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5050B3727DBA9B000C23D40 /* GapoChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5050B4C27DBA9B200C23D40 /* Build configuration list for PBXNativeTarget "GapoChallenge" */;
+			buildPhases = (
+				4CC91442FADE5C3E8DF3F3E3 /* [CP] Check Pods Manifest.lock */,
+				F5050B3427DBA9B000C23D40 /* Sources */,
+				F5050B3527DBA9B000C23D40 /* Frameworks */,
+				F5050B3627DBA9B000C23D40 /* Resources */,
+				7B6FA1A4EFC87E83AC0BE168 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GapoChallenge;
+			productName = GapoChallenge;
+			productReference = F5050B3827DBA9B000C23D40 /* GapoChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F59238F527DC61CB005EBEE5 /* GapoChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59238FE27DC61CB005EBEE5 /* Build configuration list for PBXNativeTarget "GapoChallengeTests" */;
+			buildPhases = (
+				EE570E64DB7A97811EC735F7 /* [CP] Check Pods Manifest.lock */,
+				F59238F227DC61CB005EBEE5 /* Sources */,
+				F59238F327DC61CB005EBEE5 /* Frameworks */,
+				F59238F427DC61CB005EBEE5 /* Resources */,
+				53A56C6AA96A7BBED3F27562 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F59238FB27DC61CB005EBEE5 /* PBXTargetDependency */,
+			);
+			name = GapoChallengeTests;
+			productName = GapoChallengeTests;
+			productReference = F59238F627DC61CB005EBEE5 /* GapoChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5050B3027DBA9B000C23D40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F5050B3727DBA9B000C23D40 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F59238F527DC61CB005EBEE5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F5050B3727DBA9B000C23D40;
+					};
+				};
+			};
+			buildConfigurationList = F5050B3327DBA9B000C23D40 /* Build configuration list for PBXProject "GapoChallenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5050B2F27DBA9B000C23D40;
+			productRefGroup = F5050B3927DBA9B000C23D40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5050B3727DBA9B000C23D40 /* GapoChallenge */,
+				F59238F527DC61CB005EBEE5 /* GapoChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5050B3627DBA9B000C23D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F521FBA927DC407B007AB105 /* noti.json in Resources */,
+				F57CD5F027DBABBC00B514BF /* NotificationListViewController.storyboard in Resources */,
+				F5050B4827DBA9B200C23D40 /* LaunchScreen.storyboard in Resources */,
+				F5050B4527DBA9B200C23D40 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59238F427DC61CB005EBEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC91442FADE5C3E8DF3F3E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GapoChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53A56C6AA96A7BBED3F27562 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GapoChallengeTests/Pods-GapoChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GapoChallengeTests/Pods-GapoChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GapoChallengeTests/Pods-GapoChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B6FA1A4EFC87E83AC0BE168 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GapoChallenge/Pods-GapoChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GapoChallenge/Pods-GapoChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GapoChallenge/Pods-GapoChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE570E64DB7A97811EC735F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GapoChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5050B3427DBA9B000C23D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57CD60B27DBC59100B514BF /* NotificationTableViewCell.swift in Sources */,
+				F521FBA227DC2B10007AB105 /* NotificationViewModel.swift in Sources */,
+				F57CD60527DBB8E900B514BF /* AppDIContainer.swift in Sources */,
+				F5050B3C27DBA9B000C23D40 /* AppDelegate.swift in Sources */,
+				F57CD5FF27DBB3F800B514BF /* Notification.swift in Sources */,
+				F57CD5F727DBAE8700B514BF /* NotificationListViewModel.swift in Sources */,
+				F521FBA727DC350C007AB105 /* UILabel+.swift in Sources */,
+				F57CD60927DBBD3000B514BF /* GlobalFuncs.swift in Sources */,
+				F521FBA527DC303C007AB105 /* TimeInterval+.swift in Sources */,
+				F57CD5F327DBACF300B514BF /* StoryboardInstantiable.swift in Sources */,
+				F57CD5EE27DBABAA00B514BF /* NotificationListViewController.swift in Sources */,
+				F57CD60227DBB69D00B514BF /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59238F227DC61CB005EBEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59238F927DC61CB005EBEE5 /* NotificationListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F59238FB27DC61CB005EBEE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5050B3727DBA9B000C23D40 /* GapoChallenge */;
+			targetProxy = F59238FA27DC61CB005EBEE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5050B4627DBA9B200C23D40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5050B4727DBA9B200C23D40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5050B4A27DBA9B200C23D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5050B4B27DBA9B200C23D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5050B4D27DBA9B200C23D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71338D79918450C1B1DF3BD9 /* Pods-GapoChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQUG3CGKC4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GapoChallenge/Support Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinhht.GapoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F5050B4E27DBA9B200C23D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D94E2CA1E99B99668919DD6 /* Pods-GapoChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQUG3CGKC4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GapoChallenge/Support Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinhht.GapoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F59238FC27DC61CB005EBEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBAF6E206216C1FA809256F /* Pods-GapoChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQUG3CGKC4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinhht.GapoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GapoChallenge.app/GapoChallenge";
+			};
+			name = Debug;
+		};
+		F59238FD27DC61CB005EBEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7539217AF4338912709748 /* Pods-GapoChallengeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQUG3CGKC4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinhht.GapoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GapoChallenge.app/GapoChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5050B3327DBA9B000C23D40 /* Build configuration list for PBXProject "GapoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5050B4A27DBA9B200C23D40 /* Debug */,
+				F5050B4B27DBA9B200C23D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5050B4C27DBA9B200C23D40 /* Build configuration list for PBXNativeTarget "GapoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5050B4D27DBA9B200C23D40 /* Debug */,
+				F5050B4E27DBA9B200C23D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59238FE27DC61CB005EBEE5 /* Build configuration list for PBXNativeTarget "GapoChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59238FC27DC61CB005EBEE5 /* Debug */,
+				F59238FD27DC61CB005EBEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5050B3027DBA9B000C23D40 /* Project object */;
+}
